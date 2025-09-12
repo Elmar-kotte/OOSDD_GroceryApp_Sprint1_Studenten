@@ -8,6 +8,7 @@ namespace Grocery.Core.Data.Repositories
         private readonly List<Product> products;
         public ProductRepository()
         {
+            // Create default products to show on creation of ProductRepository
             products = [ 
                 new Product(0, "Melk", 300),
                 new Product(1, "Kaas", 100),
