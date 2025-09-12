@@ -29,9 +29,6 @@ jobs:
       - name: Herstel afhankelijkheden
         run: dotnet restore
         
-      - name: Build
-        run: dotnet build --property EnableWindowsTargeting=true
-        
       - name: Bouw de applicatie
         run: dotnet build --configuration Release --no-restore
  
